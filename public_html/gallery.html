@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Paradise-Hotel</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <script src="js/jquery.min.js"></script>
+        <!--start slider -->
+        <link rel="stylesheet" href="css/fwslider.css" media="all">
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/css3-mediaqueries.js"></script>
+        <script src="js/fwslider.js"></script>
+        <link rel="stylesheet" href="css/jquery-ui.css" />
+        <script src="js/jquery-ui.js"></script>            
+        <link type="text/css" rel="stylesheet" href="css/JFFormStyle-1.css" />
+        <script type="text/javascript" src="js/JFCore.js"></script>
+        <script type="text/javascript" src="js/JFForms.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/slicebox.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<script type="text/javascript" src="js/modernizr.custom.46884.js"></script>
+        <script>
+            $(function() {
+                //$( "#datepicker,#datepicker1" ).datepicker();
+                $("#footerDiv").load("footer.html");
+                $("#headerDiv").load("header.html");
+                //$("#mainDiv").load("home.html");
+            });
+        </script>    
+    </head>
+    <body>
+      <div class="container">
+
+			
+
+			<h1>Gallery <span></span></h1>
+			
+		
+
+			<div class="wrapper">
+
+				<ul id="sb-slider" class="sb-slider">
+					<li>
+						<a href="http://www.flickr.com/photos/strupler/2969141180" target="_blank"><img src="images/gallery/1.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Paradise Hotel</h3>
+						</div>
+					</li>
+					<li>
+						<a href="http://www.flickr.com/photos/strupler/2968268187" target="_blank"><img src="images/gallery/2.jpg" alt="image2"/></a>
+						<div class="sb-description">
+							<h3>Lobby</h3>
+						</div>
+					</li>
+					<li>
+						<a href="http://www.flickr.com/photos/strupler/2968114825" target="_blank"><img src="images/gallery/3.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Business Center</h3>
+						</div>
+					</li>
+					<li>
+						<a href="http://www.flickr.com/photos/strupler/2968122059" target="_blank"><img src="images/gallery/4.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Interior</h3>
+						</div>
+					</li>
+					<li>
+						<a href="http://www.flickr.com/photos/strupler/2969119944" target="_blank"><img src="images/gallery/5.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Executive Room</h3>
+						</div>
+					</li>
+					<li>
+						<a href="http://www.flickr.com/photos/strupler/2968126177" target="_blank"><img src="images/gallery/6.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Swimming Pool</h3>
+						</div>
+					</li>
+					<li>
+						<a href="http://www.flickr.com/photos/strupler/2968945158" target="_blank"><img src="images/gallery/7.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Lounge</h3>
+						</div>
+				
+					<li>
+						<a href="http://www.flickr.com/photos/strupler/2968268187" target="_blank"><img src="images/gallery/9.jpg" alt="image2"/></a>
+						<div class="sb-description">
+							<h3>Executive Room</h3>
+						</div>
+					</li>
+					<li>
+						<a href="http://www.flickr.com/photos/strupler/2968114825" target="_blank"><img src="images/gallery/10.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Deluxe Room</h3>
+						</div>
+					</li>
+					<li>
+						<a href="http://www.flickr.com/photos/strupler/2968122059" target="_blank"><img src="images/gallery/11.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Interior</h3>
+						</div>
+					</li>
+					
+					<li>
+						<a href="http://www.flickr.com/photos/strupler/2968126177" target="_blank"><img src="images/gallery/13.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Zym</h3>
+						</div>
+					</li>
+					<li>
+						<a href="http://www.flickr.com/photos/strupler/2968945158" target="_blank"><img src="images/gallery/14.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Room</h3>
+						</div>
+					</li>
+					
+				</ul>
+
+				<div id="shadow" class="shadow"></div>
+
+				<div id="nav-arrows" class="nav-arrows">
+					<a href="#">Next</a>
+					<a href="#">Previous</a>
+				</div>
+
+			</div><!-- /wrapper -->
+		
+
+		</div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slicebox.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				
+				var Page = (function() {
+
+					var $navArrows = $( '#nav-arrows' ).hide(),
+						$shadow = $( '#shadow' ).hide(),
+						slicebox = $( '#sb-slider' ).slicebox( {
+							onReady : function() {
+
+								$navArrows.show();
+								$shadow.show();
+
+							},
+							orientation : 'r',
+							cuboidsRandom : true,
+							disperseFactor : 30
+						} ),
+						
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							// add navigation events
+							$navArrows.children( ':first' ).on( 'click', function() {
+
+								slicebox.next();
+								return false;
+
+							} );
+
+							$navArrows.children( ':last' ).on( 'click', function() {
+								
+								slicebox.previous();
+								return false;
+
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+			});
+		</script>
+        <div id="footerDiv"></div>
+    </body>
+	<footer><p align="center"><b>Copyright &copy 2015 Team7</b></p>
+</html>
